@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Festa de 5 Anos do Miguel</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #cceeff;
+            text-align: center;
+            padding: 30px 15px;
+            color: #333;
+        }
+
+        h1 {
+            color: #ff9900;
+            font-size: 2.5em;
+        }
+
+        h2 {
+            color: #007bff;
+        }
+
+        .button {
+            display: inline-block;
+            margin: 10px;
+            padding: 15px 25px;
+            background-color: #007bff;
+            color: white;
+            border-radius: 12px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1em;
+            transition: background-color 0.3s ease;
+        }
+
+        .button:hover {
+            background-color: #0056b3;
+        }
+
+        #map {
+            margin-top: 20px;
+            display: none;
+            animation: fadeIn 0.5s ease-in-out;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-top: 10px;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: scale(0.95); }
+            to { opacity: 1; transform: scale(1); }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>🎉 5 Anos do Miguel 🎉</h1>
+    <p>Venha comemorar comigo este dia especial!</p>
+
+    <h2>📍 Localização:</h2>
+    <div>
+        <div class="button" onclick="showMap()">Ver referência de localização</div>
+    </div>
+
+    <p><strong>Endereço:</strong><br>
+    Rua Benedito Nunes, 297<br>
+    Outeiro das Pedras - Itaboraí</p>
+
+    <p><strong>Data:</strong> 12/07/2025<br>
+    <strong>Hora:</strong> 19:00h</p>
+
+    <div id="map">
+        <h3>Referência:</h3>
+        <p>Rua da CEMEI Maria das Dores, 2ª quadra à esquerda.</p>
+        <img src="https://via.placeholder.com/400x200?text=Mapa+Referencial" alt="Mapa de Referência">
+    </div>
+
+    <script>
+        function showMap() {
+            document.getElementById('map').style.display = 'block';
+        }
+    </script>
+
+</body>
+</html>
